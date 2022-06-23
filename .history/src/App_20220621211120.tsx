@@ -1,9 +1,9 @@
-import { Event } from "./pages/Event";
+import { Header } from "./components/Header";
 
 export function App() {
   return (
     <div>
-      <Event />
+      <Header/>
     </div>
   );
 }
