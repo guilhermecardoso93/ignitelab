@@ -46,14 +46,14 @@ export function Video(props: VideoProps) {
     variables: {
       slug: props.lessonSlug
     }
-  });
+  })
 
-  if (!data) {
+  if(!data) {
     return (
       <div className="flex-1">
         <p>Carregando.....</p>
       </div>
-    );
+    )
   }
 
   return (
@@ -70,9 +70,11 @@ export function Video(props: VideoProps) {
       <div className="p-8 max-w-[1100px] mx-auto">
         <div className="flex items-start gap-16">
           <div className="flex-1">
-            <h1 className="text-2xl fot-bold">{data.lesson.title}</h1>
+            <h1 className="text-2xl fot-bold">
+            {data.lesson.title} 
+            </h1>
             <p className="mt-4 text-gray-200 leading-relaxed">
-              {data.lesson.description}
+            {data.lesson.description} 
             </p>
             <div className="flex items-center gap-4 mt-6">
               <img
@@ -82,10 +84,10 @@ export function Video(props: VideoProps) {
               />
               <div className="leading-relaxed">
                 <strong className="font-bold text-2xl block">
-                  {data.lesson.teacher.name}
+                {data.lesson.teacher.name} 
                 </strong>
                 <span className="text-gray-200 text-sm block">
-                  {data.lesson.teacher.bio}
+                {data.lesson.teacher.bio} 
                 </span>
               </div>
             </div>
