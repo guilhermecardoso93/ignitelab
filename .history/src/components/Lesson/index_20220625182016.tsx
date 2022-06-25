@@ -21,7 +21,7 @@ export const Lesson = (props: LessonProps) => {
   );
 
   const isActiveLesson = slug === props.slug;
-  
+
   return (
     <Link to={`/event/lesson/${props.slug}`} className="group">
       <span className="text-gray-300">{availableDateFormatted}</span>
