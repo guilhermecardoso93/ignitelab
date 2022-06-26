@@ -7,25 +7,23 @@ import {
 } from "phosphor-react";
 
 import "@vime/core/themes/default.css";
-import {
-  useGetLessonBySlugQuery
-} from "../../graphql/generated";
+import { useGetLessonsQuery } from "../../graphql/generated";
 
 interface VideoProps {
   lessonSlug: string;
 }
 
 export function Video(props: VideoProps) {
-  const { data } = useGetLessonBySlugQuery({
+  const { data } = useGetLessonsQuery({
     variables: {
       slug: props.lessonSlug
     }
   });
 
-  if (!data || !data.lesson) {
+  if (!data || !data.lessons) {
     return (
-      <div className="flex-1 grid place-content-center">
-        <p className="text-2xl text-blue-500">Carregando...</p>
+      <div className="flex-1">
+        <p>Carregando.....</p>
       </div>
     );
   }

@@ -46,12 +46,12 @@ export const Lesson = (props: LessonProps) => {
               )}
             >
               <CheckCircle size={20} />
-              Conteúdo liberado
+              Meme Available
             </span>
           ) : (
             <span className="text-sm text-orange-500 font-medium flex items-center gap-2">
               <Lock size={20} />
-              Em breve
+              Soon
             </span>
           )}
 
@@ -64,7 +64,7 @@ export const Lesson = (props: LessonProps) => {
               }
             )}
           >
-            {props.type === "live" ? "Ao Vivo" : "Aula Prática"}
+            {props.type === "live" ? "LIVE" : "MEME"}
           </span>
         </header>
         <strong

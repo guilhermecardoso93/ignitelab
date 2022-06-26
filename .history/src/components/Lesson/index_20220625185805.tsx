@@ -64,7 +64,7 @@ export const Lesson = (props: LessonProps) => {
               }
             )}
           >
-            {props.type === "live" ? "Ao Vivo" : "Aula Prática"}
+            {props.type === "live" ? "LIVE" : "Aula Prática"}
           </span>
         </header>
         <strong

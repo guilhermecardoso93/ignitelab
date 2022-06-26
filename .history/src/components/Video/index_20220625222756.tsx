@@ -8,7 +8,8 @@ import {
 
 import "@vime/core/themes/default.css";
 import {
-  useGetLessonBySlugQuery
+  useGetLessonBySlugQuery,
+  useGetLessonsQuery
 } from "../../graphql/generated";
 
 interface VideoProps {
